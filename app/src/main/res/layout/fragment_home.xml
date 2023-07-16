@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignBottom="@+id/banner"
+    tools:context=".fragment_home">
+
+
+    <FrameLayout
+
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:background="@drawable/border">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="10dp"
+
+            android:text="@string/main_title"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="14pt" />
+
+
+    </FrameLayout>
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70sp">
+
+
+        <CheckBox
+            android:id="@+id/red"
+            android:layout_width="200sp"
+            android:layout_height="50sp"
+            android:layout_gravity="top"
+            android:layout_marginStart="100dp"
+            android:checked="false"
+            android:clickable="true"
+            android:singleLine="false"
+            android:soundEffectsEnabled="true"
+            android:text="@string/led_red"
+            android:textAlignment="gravity"
+            android:textColor="@color/red"
+            app:cornerRadius="3dp"
+            app:rippleColor="@color/red"
+            app:strokeColor="@color/white"
+            app:strokeWidth="2dp"
+            tools:ignore="TextSizeCheck" />
+
+        <CheckBox
+            android:id="@+id/blue"
+            android:layout_width="200sp"
+            android:layout_height="50sp"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:text="@string/led_blue"
+            android:textAlignment="gravity"
+            android:textColor="@color/blue"
+            app:cornerRadius="3dp"
+            app:rippleColor="@color/blue"
+            app:strokeColor="@color/white"
+            app:strokeWidth="1dp"
+            tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+
+        <CheckBox
+            android:id="@+id/green"
+            android:layout_width="200sp"
+            android:layout_height="50sp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="100dp"
+            android:clickable="true"
+            android:text="@string/led_green"
+            android:textColor="@color/green"
+            app:cornerRadius="3dp"
+            app:rippleColor="@color/green"
+            app:strokeColor="@color/white"
+            app:strokeWidth="2dp"
+            tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+
+    </FrameLayout>
+
+
+</FrameLayout>
